@@ -1,0 +1,227 @@
+<!-- mealTemplate.html -->
+<html>
+<head>
+    <style>
+        /* Add your CSS styles here for the email template */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            border: 2px solid red;
+            background-color: white;
+            color: red;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .feedback-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: red;
+        }
+
+        button {
+            width: 170px;
+            border: none;
+            background-color: red;
+            color: white;
+        }
+
+        .hidden-name {
+            display: none;
+        }
+
+        /* You can add more styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.chitkara.edu.in/chitkara-university-logo.png" alt="logo">
+            <h1>Meal Update</h1>
+        </div>
+        <div class="content">
+            <p>Hello,</p>
+            <p>[STUDENT_NAME]</p>
+            <p>[STUDENT_ROLLNO]</p>
+            <p>Your [MEAL_TYPE] meal is done for today.</p>
+            <p>Hope you enjoy your meal!</p>
+
+            <a href="[LINK]">Feedback link</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+mealTemplate.html
+<html>
+  <head>
+    <style>
+      /* Add your CSS styles here for the email template */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .header {
+        border: 2px solid red;
+        background-color: white;
+        color: red;
+        text-align: center;
+        padding: 20px;
+      }
+      .content {
+        padding: 20px;
+      }
+      form {
+        text-align: center;
+      }
+      .form-field {
+        margin: 10px;
+      }
+      .star-rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .star-rating label {
+        font-size: 24px;
+        cursor: pointer;
+        color: black; /* Set the initial color to black */
+      }
+
+      .star-rating input[type="radio"] {
+            display: none;
+        }
+
+      .star-rating input[type="radio"]:checked + label {
+        color: #ffcc00; /* Yellow color for filled stars */
+      }
+
+      a {
+        color: red;
+      }
+
+      /* .form {
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content:start;
+
+        text-align: left;
+      }
+
+      .form input {
+        width: 300px;
+        height: 30px;
+      }
+
+      .form textarea {
+        width: 300px;
+      }
+
+      .form button {
+        padding-left: 10px;
+        width: 100%;
+        height: 30px;
+        color: white;
+        border: none;
+        background-color: red;
+      }
+
+      h1 {
+        color:red;
+      } */
+
+      /* You can add more styles as needed */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://www.chitkara.edu.in/chitkara-university-logo.png"
+          alt="logo"
+        />
+        <h1>Meal Update</h1>
+      </div>
+      <div class="content">
+        <p>Hello,</p>
+        <p>[STUDENT_NAME]</p>
+        <p>[STUDENT_ROLLNO]</p>
+        <p>Your [MEAL_TYPE] meal is done for today.</p>
+        <p>Hope you enjoy your meal!</p>
+
+        <h1>Feedback Form</h1>
+        <form class="form" action="http://localhost:3001/users/feedback" method="post">
+          <div class="form-field">
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" value="[STUDENT_EMAIL]" disabled placeholder="[STUDENT_EMAIL]" />
+          </div>
+          <div class="form-field">
+            <label for="feedback">Feedback:</label>
+            <br>
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <label for="rating">Rating:</label>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="1" />
+              <label for="star5">★</label>
+              <input type="radio" id="star4" name="rating" value="2" />
+              <label for="star4">★</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3">★</label>
+              <input type="radio" id="star2" name="rating" value="4" />
+              <label for="star2">★</label>
+              <input type="radio" id="star1" name="rating" value="5" />
+              <label for="star1">★</label>
+            </div>
+          </div>
+
+          <button type="submit" class="feedback-link">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+        // Get all the radio buttons for the star rating
+        const starRatingInputs = document.querySelectorAll('input[name="rating"]');
+        
+        // Add a click event listener to each radio button
+        starRatingInputs.forEach((radio, index) => {
+            radio.addEventListener('click', () => {
+                // Reset all stars to their default color (black)
+                starRatingInputs.forEach((starInput) => {
+                    starInput.nextElementSibling.style.color = 'black';
+                });
+    
+                // Set the color of the clicked star and all stars to the left
+                for (let i = 0; i <= index; i++) {
+                    starRatingInputs[i].nextElementSibling.style.color = '#ffcc00'; // Yellow color for filled stars
+                }
+            });
+        });
+    </script>
+    
+  </body>
+</html> -->

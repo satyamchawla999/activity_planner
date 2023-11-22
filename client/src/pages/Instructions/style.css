@@ -1,0 +1,20 @@
+/* PetCareInfo.css */
+
+/* .pet-care-info {
+  font-family: Arial, sans-serif;
+  width: 98%;
+  height: 80vh;
+  overflow-y: scroll;
+  margin: 20px;
+}*/
+
+.pet-care-info p {
+  text-align: justify;
+  padding-right: 10px;
+  margin-bottom: 20px;
+} 
+.pet-care-info h1 {
+  font-size: 25px;
+  /* margin-top: 20px ; */
+  color: red;
+}

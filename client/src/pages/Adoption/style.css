@@ -1,0 +1,153 @@
+.dash-board {
+  width: 100%;
+  height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.pet-heading {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.pet-heading h1{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.petItemContainer {
+  width: 95%;
+  height: 80%;
+  /* background-color: #e4e6ea; */
+  /* padding: 10px; */
+}
+
+/* Update your style.css file */
+.petItemContainer {
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.petItem {
+  width: 48%; /* Adjust width for 2 pets */
+  height: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeebeb;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: box-shadow 0.3s, transform 0.3s;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.petItem:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  transform: translateY(-2px); /* Add a slight lift effect on hover */
+}
+
+.petImage {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+}
+
+.petImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.petDetails {
+  width: 60%;
+  height: 100%;
+}
+
+.petDetailsInfo {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.petDetailsInfo p {
+  margin: 0;
+}
+
+.petActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deletePet {
+  background-color: #f44336; /* Change button background color */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 5px;
+}
+
+.moreInfo {
+  flex-grow: 1;
+  margin-right: 5px;
+  color: #f44336; /* Change button background color */
+  border: none;
+  border:1px solid #f44336;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactNumber {
+  flex-grow: 1;
+  margin-right: 5px;
+  color: green; /* Change button background color */
+  border: none;
+  border:1px solid green;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.petActions .moreInfo:hover {
+  background-color: #f44336; /* Darken button color on hover */
+  color: white;
+}
+
+.petActions .deletePet:hover {
+  background-color: #d32f2f; /* Darken button color on hover */
+}
+
+.petDetailsTable{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+

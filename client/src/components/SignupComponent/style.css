@@ -1,0 +1,101 @@
+.SignupPageContainer{
+
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px 5px, rgba(0, 0, 0, 0.04) 0px 10px 10px 5px;
+    /* padding: 15px; */
+
+}
+
+.leftContainer{
+    width: 50%;
+    height: 100%;
+}
+
+
+.petLogo{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:#D20002;
+    margin-top: 0px;
+}
+
+.petLogo p{
+    /* margin-top: -10px; */
+    font-weight: bold;
+}
+
+.petLogo img {
+    width: 35px;
+    height: 35px;
+}
+
+.rightContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.rightContainer h1 {
+    /* position: absolute; */
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formSection label {
+    font-weight: 500;
+}
+
+.formSection input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(217, 212, 212);
+}
+
+.formSection button {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    color:white;
+    background-color:#D20002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgb(236, 182, 129) 0%, rgba(248,202,154,1) 100%, rgba(240,213,184,1) 100%); */
+
+}
+.formSection button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Link {
+    color:#D20002;
+}
+
+.pageChange {
+    font-size: 14px;
+}
